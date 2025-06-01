@@ -1,0 +1,28 @@
+python
+# Define the high-level loop structure of an agent
+while not done:
+
+    prompt = AgentLanguage.format(memory, goals, available_actions)
+    response = LLM.generate(prompt)
+    action = AgentLanguage.parse(response)
+    result = environment.execute(action)
+    memory.append((action, result))
+```
+
+This structure enables the AI to reason, act, and adjust continuously based on feedback from the environment.
+
+To effectively use the Agent_Loop, you need to understand Agent_Language:
+
+
+```python
+# Within each loop iteration
+prompt = agent_language.format(memory, goals, actions)
+response = llm.generate_response(prompt)
+next_action = agent_language.parse(response)
+```
+
+## Responsibilities:
+- **format**: Prepares memory, goals, and available tools into a structured prompt
+- **parse**: Interprets LLM response to determine which action to take next
+
+
