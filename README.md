@@ -7,4 +7,4 @@ This is a summary of the tasks and code provided by the Coursera Online Course "
 
 # Disclosure
 
-This repository serves as a reference for the Prompt Engineering course. I have not created any of the course materials. View this as a helpful guide for your learning journey.
+This repository serves as a reference for the Prompt Engineering course. I have not created any of the course materials. View this as a helpful guide for your learning journey. The notes outside the "code_prompts" folder were written by me.
